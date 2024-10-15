@@ -1,26 +1,27 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif margin;
     padding: 0;
     line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background-color: #6f4444;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    text-align: right;
+    font-size: large;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-left: 10px;
+    text-decoration: underline;
 }
 
 nav ul li a {
@@ -28,17 +29,25 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: rgb(178, 224, 255);
+    text-decoration: underline;
+    transition: .5s;
+}
+
 section {
+    border: 1px solid rgb(227, 241, 252);
     padding: 20px;
     margin: 20px;
+    background-color: rgb(244, 249, 255);
 }
 
 footer {
-    background-color: #333;
+    background-color: #543434;
     color: white;
     text-align: center;
-    padding: 10px;
     position: fixed;
     bottom: 0;
+    right: 0px;
     width: 100%;
 }

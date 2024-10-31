@@ -62,7 +62,7 @@ nav ul li a:hover {
 }
 
 section {
-  flex: 1;
+  flex: 1;    
   border: 1px solid rgb(227, 241, 252);
   padding: 20px;
   margin: 20px;
@@ -70,7 +70,7 @@ section {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-size: large;
-}
+ }
 
 section:hover {
   color: rgb(4, 60, 98);
@@ -86,7 +86,6 @@ footer {
   background-image: url("bannerFooter.jpg");
   background-size: cover;
   background-position: center;
-  /* background-color: #543434; */
   color: white;   
   text-align: center;
   position: relative;
@@ -94,7 +93,6 @@ footer {
   margin-top: 20px;
   bottom: 0;
   right: 0px;
-  width: 100%;
 }
 
 

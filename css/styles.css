@@ -68,6 +68,7 @@ section {
   margin: 20px;
   background-color: rgb(244, 249, 255);
   border-radius: 8px;
+  border-left: double #115372;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-size: large;
  }
@@ -82,7 +83,6 @@ h2 {
 }
 
 footer {
-
   background-image: url("bannerFooter.jpg");
   background-size: cover;
   background-position: center;

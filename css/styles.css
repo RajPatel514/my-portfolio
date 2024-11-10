@@ -2,7 +2,9 @@
 html {  
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
+
 
 body {
   height: 100%;
@@ -80,6 +82,26 @@ section:hover {
 
 h2 {
   color: #333;
+}
+
+#contactMe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: .5s;
+  background-color: #dcf7d1;
 }
 
 footer {

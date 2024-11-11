@@ -51,7 +51,7 @@ if (saveButton) {
 
 //Translation feature to go to english page
 translatePage.addEventListener('click', function () {
-    if (window.location.href === '/index.html') {
+    if (window.location.pathname === '/index.html') {
         window.location.href = 'indexFR.html';
     } else {
         window.location.href = 'index.html';

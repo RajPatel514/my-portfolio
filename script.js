@@ -50,7 +50,7 @@ if (saveButton) {
 
 //Translation feature to go to french page
 translatePage.addEventListener('click', function () {
-    if (window.location.pathname === '/index.html') {
+    if (window.location.href === 'https://rajpatel514.github.io/my-portfolio/') {
         window.location.href = 'indexFR.html';
     } else {
         window.location.href = 'index.html';

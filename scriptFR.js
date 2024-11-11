@@ -23,23 +23,23 @@ if (saveButton) {
 
         if (firstName /*&& lastName*/ && question && email) {
             if (validateEmail(email)) {
-                alert("MERCI. We will get back to you shortly!");
+                alert("Merci pour votre soumission. Nous vous répondrons sous peu!");
                 window.location.href = "indexFR.html";
             } else {
-                alert("Please enter a valid email address.");
+                alert("S'il vous plaît, mettez une courriel valide.");
             }
         } else {
             if (!firstName) {
-                alert("Please enter your first name.");
+                alert("Veuillez saisir votre prénom.");
                 // } else {
                 //     if (!lastName) {
-                //         alert("Please enter your last name.");
+                //         alert("Veuillez entrer votre nom de famille.");
             } else {
                 if (!question) {
-                    alert("Please enter your feedback or questions.");
+                    alert("Veuillez saisir vos commentaires ou vos questions.");
                 } else {
                     if (!email) {
-                        alert("Please enter your email address.");
+                        alert("Veuillez entrer votre courriel.");
                     }
                 }
                 // }

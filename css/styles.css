@@ -81,6 +81,28 @@ section:hover {
   transition: 0.3s;
 }
 
+
+.dropdown {
+  background-color: #62a2b5;
+  color: rgb(255, 255, 255);
+  width: 70%;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  background-color: #2d435a;
+}
+
+.content {
+  background-color: #f1f1f1;
+  padding: 0px;
+  text-align: center;
+  width: 70%;
+  overflow: hidden;
+}
+
 h2 {
   color: #333;
 }

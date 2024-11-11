@@ -97,13 +97,19 @@ button {
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 4px;
-  padding: 10px 15px;
+  padding: 10px;
   cursor: pointer;
 }
 
 button:hover {
   transition: .5s;
   background-color: #dcf7d1;
+}
+
+#translate {
+  padding: 5px;
+  background-color: #077495;
+  color: rgb(255, 255, 255);
 }
 
 footer {

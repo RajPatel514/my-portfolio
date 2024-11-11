@@ -23,8 +23,8 @@ if (saveButton) {
 
         if (firstName /*&& lastName*/ && question && email) {
             if (validateEmail(email)) {
-                alert("Thank you for your submission. We will get back to you shortly!");
-                window.location.href = "index.html";
+                alert("MERCI. We will get back to you shortly!");
+                window.location.href = "indexFR.html";
             } else {
                 alert("Please enter a valid email address.");
             }
@@ -48,7 +48,8 @@ if (saveButton) {
     });
 }
 
-//Translation feature to go to french page
+
+//Translation feature to go to english page
 translatePage.addEventListener('click', function () {
     if (window.location.pathname === '/index.html') {
         window.location.href = 'indexFR.html';

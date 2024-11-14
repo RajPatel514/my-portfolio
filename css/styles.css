@@ -77,17 +77,19 @@ section {
 }
 
 section:hover {
-  color: rgb(4, 60, 98);
+  color: rgb(3, 49, 80);
   transition: 0.3s;
 }
 
 
 .dropdown {
   background-color: #63a9be;
+  font-size: medium;
   color: rgb(255, 255, 255);
   width: 100%;
   text-align: center;
-  padding: 15px;
+  padding: 13px;
+  font-size: 17px;
   cursor: pointer;
   border-right: double #333;
   border-left: double #333;
@@ -104,10 +106,23 @@ section:hover {
   background-color: #2d435a;
 }
 
+.dropdown:after {
+  content: '\25BC'; 
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  float:left;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\25B2"; /
+}
+
 .content {
   background-color: #e5f1fc;
   padding: 0px;
   text-align: center;
+  font-size: 17px;
   width: 100%;
   overflow: hidden;
   display: none;

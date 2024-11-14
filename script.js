@@ -68,3 +68,13 @@ for (var i = 0; i < dropdowns.length; i++) {
         }
     });
 }
+
+//Typed JS Features
+var typed = new Typed('.element', {
+    strings: ["Hey everyone! My name is Raj Patel, and I am studying computer programming at Humber College. I've taken a big step in a new direction to learn something new! This discipline will eventually help me make a shift in my career. I am currently working on a few web development projects on the side, as well as being a self - employed contractor. I was a machinist for five years prior to that.I am looking forward to what and where this new journey will bring me, thank you for visiting my page!"],
+    typeSpeed: 20,
+    startDelay: 1000,
+    showCursor: true,
+    shuffle: true,
+
+});

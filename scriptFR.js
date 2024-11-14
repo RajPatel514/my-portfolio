@@ -51,7 +51,7 @@ if (saveButton) {
 
 //Translation feature to go to english page
 translatePage.addEventListener('click', function () {
-    if (window.location.pathname === '/index.html' || '/my-portfolio/') { //Added this OR operator just for github functionality
+    if (window.location.pathname === '/index.html') {
         window.location.href = 'indexFR.html';
     } else {
         window.location.href = 'index.html';

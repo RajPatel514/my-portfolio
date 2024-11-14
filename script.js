@@ -50,7 +50,7 @@ if (saveButton) {
 
 //Translation feature to go to french page
 translatePage.addEventListener('click', function () {
-    if (window.location.href.includes('index.html')) {
+    if (window.location.pathname === '/index.html') {
         window.location.href = 'indexFR.html';
     } else {
         window.location.href = 'index.html';

@@ -48,7 +48,6 @@ if (saveButton) {
     });
 }
 
-
 //Translation feature to go to english page
 translatePage.addEventListener('click', function () {
     if (window.location.pathname === '/index.html') {

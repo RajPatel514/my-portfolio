@@ -49,22 +49,14 @@ if (saveButton) {
 }
 
 //Translation feature to go to french page
-// translatePage.addEventListener('click', function () {
-//     let pageLang = window.location.pathname;
-//     if (pageLang === '/index.html' || pageLang === '/my-portfolio') {
-//         window.location.href = 'indexFR.html';
-//     } else {
-//         window.location.href = 'index.html';
-//     }
-// });
-
 translatePage.addEventListener('click', function () {
-    if (window.location.pathname === '/index.html') {
+    if (window.location.href.includes('index.html')) {
         window.location.href = 'indexFR.html';
     } else {
         window.location.href = 'index.html';
     }
 });
+
 
 
 //Code for collapsible projects

@@ -11,7 +11,7 @@ body {
   height: 100%;
   margin: 0;
   display: grid;
-  background-color: rgb(229, 241, 252);
+  background-color: #e5f1fc;
   font-family: 'Times New Roman', Times, serif;
   padding: 0;
   line-height: 1.6;
@@ -83,24 +83,34 @@ section:hover {
 
 
 .dropdown {
-  background-color: #62a2b5;
+  background-color: #63a9be;
   color: rgb(255, 255, 255);
-  width: 70%;
+  width: 100%;
   text-align: center;
   padding: 15px;
   cursor: pointer;
+  border-right: double #333;
+  border-left: double #333;
 }
 
+#project1 {
+  border-top: double #333;
+}
+
+#project6 {
+  border-bottom: double #333;
+}
 .dropdown:hover {
   background-color: #2d435a;
 }
 
 .content {
-  background-color: #f1f1f1;
+  background-color: #e5f1fc;
   padding: 0px;
   text-align: center;
-  width: 70%;
+  width: 100%;
   overflow: hidden;
+  display: none;
 }
 
 h2 {

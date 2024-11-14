@@ -57,3 +57,19 @@ translatePage.addEventListener('click', function () {
         window.location.href = 'index.html';
     }
 });
+
+//Code for collapsible projects
+//Code learned from W3
+var dropdowns = document.getElementsByClassName("dropdown");
+
+for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}

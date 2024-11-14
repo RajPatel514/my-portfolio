@@ -73,11 +73,12 @@ section {
   border-radius: 8px;
   border-left: double #115372;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: rgb(4, 68, 111);
   font-size: large;
 }
 
 section:hover {
-  color: rgb(3, 49, 80);
+  color: #333;
   transition: 0.3s;
 }
 

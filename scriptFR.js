@@ -1,4 +1,3 @@
-
 //Form validation
 const fnIput = document.getElementById("firstName");
 // const lnIput = document.getElementById("lastName"); //Not used! I decide to make the last name optional
@@ -73,12 +72,11 @@ for (var i = 0; i < dropdowns.length; i++) {
     });
 }
 
-
 //Typed in FR
 var typed = new Typed('.element', {
     strings: ["Salut tout le monde! Je m'appelle Raj Patel et j'étudie la programmation informatique au Humber College. j'ai pris un un grand pas dans une nouvelle direction pour apprendre quelque chose de nouveau! Cette disciplinem'aidera éventuellement à faire un changement dans ma carrière. Je travaille actuellement sur quelques projets de développement Web en parallèle, en plus d'être un entrepreneur indépendant. Avant cela, j'ai été machiniste pendant cinq ans. J'attends avec impatience quoi et où ce nouveau voyage m'amènera, merci d'avoir visité ma page!!"],
-    typeSpeed: 20,
-    startDelay: 1000,
+    typeSpeed: 10,
+    startDelay: 500,
     showCursor: true,
     shuffle: true,
 

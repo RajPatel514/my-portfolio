@@ -5,7 +5,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   cursor: url("star-4pt-round.png") 12 12, default;
   height: 100%;
@@ -23,21 +22,21 @@ header {
   background-image: url("bannerHeader.jpg");
   background-size: cover;
   background-position: center;
-  /* background-color: #6f4444; */
   color: white;
   padding: 10px;
   text-align: right;
   font-size: large;
 }
+
 h1 {
   margin-bottom: 1px;
   letter-spacing: -3px;
-  /* cursor: default; */
 }
 
 h1 span {
   transition: 0.3s;
 }
+
 h1 span:hover {
   color: rgb(178, 224, 255);
 }
@@ -50,7 +49,6 @@ nav ul {
 nav ul li {
   display: inline;
   margin-left: 10px;
-  /* text-decoration: underline; */
 }
 
 nav ul li a {
@@ -68,7 +66,7 @@ section {
   flex: 1;    
   border: 1px solid rgb(227, 241, 252);
   padding: 20px;
-  margin: 20px;
+  margin: 15px;
   background-color: rgb(244, 249, 255);
   border-radius: 8px;
   border-left: double #115372;
@@ -81,7 +79,6 @@ section:hover {
   color: #333;
   transition: 0.3s;
 }
-
 
 .dropdown {
   background-color: #63a9be;
@@ -103,6 +100,7 @@ section:hover {
 #project6 {
   border-bottom: double #333;
 }
+
 .dropdown:hover {
   background-color: #2d435a;
 }
@@ -139,7 +137,6 @@ h2 {
   gap: 5px;
 }
 
-
 button {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
@@ -172,7 +169,6 @@ footer {
   bottom: 0;
   right: 0px;
 }
-
 
 /* Media Queries for Mobile Devices */
 @media only screen and (max-width: 600px) {

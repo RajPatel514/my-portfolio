@@ -81,3 +81,9 @@ var typed = new Typed('.element', {
     shuffle: true,
 
 });
+
+// Dark Mode
+const toggleThemeButton = document.getElementById('darkMode');
+toggleThemeButton.addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
+});

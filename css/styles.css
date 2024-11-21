@@ -1,189 +1,169 @@
-/* General Styles */
-html {  
-  height: 100%;
-  margin: 0;
-  scroll-behavior: smooth;
-}
-
-body {
-  cursor: url("star-4pt-round.png") 12 12, default;
-  height: 100%;
-  margin: 0;
-  display: grid;
-  background-color: #e5f1fc;
-  font-family: 'Times New Roman', Times, serif;
-  padding: 0;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  background-image: url("bannerHeader.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 10px;
-  text-align: right;
+header,
+section {
   font-size: large;
 }
-
-h1 {
-  margin-bottom: 1px;
-  letter-spacing: -3px;
-}
-
-h1 span {
+h1 span,
+section:hover {
   transition: 0.3s;
 }
-
-h1 span:hover {
-  color: rgb(178, 224, 255);
+.content,
+.dropdown {
+  font-size: 17px;
+  width: 100%;
+  text-align: center;
 }
-
+footer,
+header {
+  background-position: 50%;
+  background-size: cover;
+}
+.content,
+.dropdown,
+footer {
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-color: #e5f1fc;
+  cursor: url(star-4pt-round.png) 12 12, default;
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  font-family: Times New Roman, Times, serif;
+  line-height: 1.6;
+  padding: 0;
+}
+header {
+  background-image: url(bannerHeader.jpg);
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+}
+h1 {
+  letter-spacing: -3px;
+  margin-bottom: 1px;
+}
+h1 span:hover {
+  color: #b2e0ff;
+}
 nav ul {
   list-style: none;
   margin-top: 10px;
 }
-
 nav ul li {
   display: inline;
   margin-left: 10px;
 }
-
 nav ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-
 nav ul li a:hover {
-  color: rgb(178, 224, 255);
+  color: #b2e0ff;
   text-decoration: underline;
   transition: 0.3s;
 }
-
 section {
-  flex: 1;    
-  border: 1px solid rgb(227, 241, 252);
-  padding: 20px;
-  margin: 15px;
-  background-color: rgb(244, 249, 255);
-  border-radius: 8px;
+  background-color: #f4f9ff;
+  border: 1px solid #e3f1fc;
   border-left: double #115372;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: rgb(4, 68, 111);
-  font-size: large;
+  color: #04446f;
+  flex: 1;
+  margin: 15px;
+  padding: 20px;
 }
-
 section:hover {
   color: #333;
-  transition: 0.3s;
 }
-
 .dropdown {
   background-color: #63a9be;
-  font-size: medium;
-  color: rgb(255, 255, 255);
-  width: 100%;
-  text-align: center;
-  padding: 13px;
-  font-size: 17px;
-  cursor: pointer;
-  border-right: double #333;
   border-left: double #333;
+  border-right: double #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px;
 }
-
 #project1 {
   border-top: double #333;
 }
-
 #project6 {
   border-bottom: double #333;
 }
-
 .dropdown:hover {
   background-color: #2d435a;
 }
-
 .dropdown:after {
-  content: '\25BC'; 
-  color: rgb(255, 255, 255);
+  color: #fff;
+  content: "\25BC";
+  float: left;
   font-size: 12px;
-  float:left;
   margin-left: 5px;
 }
-
 .active:after {
-  content: "\25B2"; /
+  content: "\25B2";
 }
-
 .content {
   background-color: #e5f1fc;
-  padding: 0px;
-  text-align: center;
-  font-size: 17px;
-  width: 100%;
-  overflow: hidden;
   display: none;
+  overflow: hidden;
+  padding: 0;
 }
-
 h2 {
   color: #333;
 }
-
 #contactMe {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
 }
-
 button {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  background-color: #fff;
   border: none;
   border-radius: 4px;
-  padding: 10px;
+  color: #000;
   cursor: pointer;
+  padding: 10px;
 }
-
 button:hover {
-  transition: .5s;
   background-color: #dcf7d1;
+  transition: 0.5s;
 }
-
 #translate {
-  padding: 5px;
   background-color: #077495;
-  color: rgb(255, 255, 255);
 }
-
+#translate,
 footer {
-  background-image: url("bannerFooter.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;   
-  text-align: center;
-  position: relative;
+  color: #fff;
   padding: 5px;
-  margin-top: 20px;
-  bottom: 0;
-  right: 0px;
 }
-
-/* Media Queries for Mobile Devices */
+footer {
+  background-image: url(bannerFooter.jpg);
+  bottom: 0;
+  margin-top: 20px;
+  position: relative;
+  right: 0;
+}
 @media only screen and (max-width: 600px) {
-  header, footer {
-      padding: 5px;
+  footer,
+  header {
+    padding: 5px;
   }
-
   nav ul li {
-      display: block;
-      text-align: right;
-      margin: 5px 0;
+    display: block;
+    margin: 5px 0;
+    text-align: right;
   }
-
   section {
-      padding: 10px;
-      margin: 10px;
+    margin: 10px;
+    padding: 10px;
   }
 }

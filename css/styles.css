@@ -140,7 +140,12 @@ button:hover {
 #translate {
   background-color: #077495;
 }
+
+#darkMode {
+  background-color: #077495;
+}
 #translate,
+#darkMode,
 footer {
   color: #fff;
   padding: 5px;

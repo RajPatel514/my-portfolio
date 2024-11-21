@@ -8,6 +8,45 @@
   background-image: url(bannerFooterDARK.jpg);
 }
 
+.dark-mode {
+  background-color: #3b4046;
+}
+
+.dark-mode #translate,
+#darkMode {
+  background-color: #043342;
+}
+.dark-mode #darkMode {
+  background-color: #043342;
+}
+
+.dark-mode .content {
+  background-color: #424242;
+  color: #d5ecfb;
+}
+
+.dark-mode section {
+  color: #7abed2;
+  background-color: #021117;
+  border-left: double #a1a1a1;
+}
+.dark-mode h2 {
+  color: #6fb5cb;
+}
+
+.dark-mode section:hover {
+  color: #b0b0b0;
+}
+
+.dark-mode .dropdown {
+  background-color: #1f2634;
+  border-left: double #bebcbc;
+  border-right: double #a3a3a3;
+  color: #d0d0d0;
+  cursor: pointer;
+  padding: 13px;
+}
+
 header,
 section {
   font-size: large;

@@ -37,6 +37,19 @@
   color: #b0b0b0;
 }
 
+.dark-mode .content a:link {
+  color: #fff;
+}
+.dark-mode .content a:visited {
+  color: #fff;
+}
+.dark-mode .content a:hover {
+  color: #fff;
+}
+.dark-mode .content a:active {
+  color: #fff;
+}
+
 .dark-mode .dropdown {
   background-color: #1f2634;
   border-left: double #bebcbc;

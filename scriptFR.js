@@ -87,3 +87,15 @@ const toggleThemeButton = document.getElementById('darkMode');
 toggleThemeButton.addEventListener('click', function () {
     document.body.classList.toggle('dark-mode');
 });
+
+// Display Date-Time
+function displayTime() {
+    function updateTime() {
+        let currentDate = new Date();
+        let formatTime = currentDate.toLocaleString();
+        document.getElementById('currentTime').innerText = formatTime;
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+}
+displayTime();

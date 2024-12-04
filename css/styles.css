@@ -3,27 +3,20 @@
   color: #fff;
   padding: 10px;
 }
-
 .dark-mode footer {
   background-image: url(bannerFooterDARK.jpg);
 }
-
 .dark-mode {
   background-color: #3b4046;
 }
-
+.dark-mode #darkMode,
 .dark-mode #translate {
   background-color: #043342;
 }
-.dark-mode #darkMode {
-  background-color: #043342;
-}
-
 .dark-mode .content {
   background-color: #424242;
   color: #d5ecfb;
 }
-
 .dark-mode section {
   color: #7abed2;
   background-color: #021117;
@@ -32,24 +25,15 @@
 .dark-mode h2 {
   color: #6fb5cb;
 }
-
 .dark-mode section:hover {
   color: #b0b0b0;
 }
-
-.dark-mode .content a:link {
-  color: #fff;
-}
+.dark-mode .content a:active,
+.dark-mode .content a:hover,
+.dark-mode .content a:link,
 .dark-mode .content a:visited {
   color: #fff;
 }
-.dark-mode .content a:hover {
-  color: #fff;
-}
-.dark-mode .content a:active {
-  color: #fff;
-}
-
 .dark-mode .dropdown {
   background-color: #1f2634;
   border-left: double #bebcbc;
@@ -58,7 +42,6 @@
   cursor: pointer;
   padding: 13px;
 }
-
 #nameplate {
   cursor: none;
 }
@@ -74,7 +57,6 @@ section:hover {
 .dropdown {
   font-size: 17px;
   width: 100%;
-  text-align: center;
 }
 footer,
 header {
@@ -144,6 +126,7 @@ section {
   margin: 15px;
   padding: 20px;
 }
+h2,
 section:hover {
   color: #333;
 }
@@ -180,9 +163,6 @@ section:hover {
   overflow: hidden;
   padding: 0;
 }
-h2 {
-  color: #333;
-}
 #contactMe {
   display: flex;
   flex-wrap: wrap;
@@ -198,17 +178,14 @@ button {
 }
 button:hover {
   background-color: #dcf7d1;
-  transition: 0.5s;
+  box-shadow: 0px 0px 1px 1px #0000008d;
 }
+#darkMode,
 #translate {
   background-color: #077495;
 }
-
-#darkMode {
-  background-color: #077495;
-}
-#translate,
 #darkMode,
+#translate,
 footer {
   color: #fff;
   padding: 5px;
@@ -234,34 +211,26 @@ footer {
     margin: 10px;
     padding: 10px;
   }
-
   .dark-mode header {
     background-image: url(bannerHeaderDARK.jpg);
     color: #fff;
     padding: 10px;
   }
-
   .dark-mode footer {
     background-image: url(bannerFooterDARK.jpg);
   }
-
   .dark-mode {
     background-color: #3b4046;
   }
-
-  .dark-mode #translate,
-  #darkMode {
+  #darkMode,
+  .dark-mode #darkMode,
+  .dark-mode #translate {
     background-color: #043342;
   }
-  .dark-mode #darkMode {
-    background-color: #043342;
-  }
-
   .dark-mode .content {
     background-color: #424242;
     color: #d5ecfb;
   }
-
   .dark-mode section {
     color: #7abed2;
     background-color: #021117;
@@ -270,11 +239,9 @@ footer {
   .dark-mode h2 {
     color: #6fb5cb;
   }
-
   .dark-mode section:hover {
     color: #b0b0b0;
   }
-
   .dark-mode .dropdown {
     background-color: #1f2634;
     border-left: double #bebcbc;
@@ -283,16 +250,10 @@ footer {
     cursor: pointer;
     padding: 13px;
   }
-  .dark-mode .content a:link {
-    color: #fff;
-  }
+  .dark-mode .content a:active,
+  .dark-mode .content a:hover,
+  .dark-mode .content a:link,
   .dark-mode .content a:visited {
-    color: #fff;
-  }
-  .dark-mode .content a:hover {
-    color: #fff;
-  }
-  .dark-mode .content a:active {
     color: #fff;
   }
 }

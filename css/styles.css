@@ -281,4 +281,16 @@ footer {
     cursor: pointer;
     padding: 13px;
   }
+  .dark-mode .content a:link {
+    color: #fff;
+  }
+  .dark-mode .content a:visited {
+    color: #fff;
+  }
+  .dark-mode .content a:hover {
+    color: #fff;
+  }
+  .dark-mode .content a:active {
+    color: #fff;
+  }
 }

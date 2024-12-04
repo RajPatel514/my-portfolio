@@ -59,6 +59,9 @@
   padding: 13px;
 }
 
+#nameplate {
+  cursor: none;
+}
 header,
 section {
   font-size: large;
@@ -93,7 +96,6 @@ html {
 }
 body {
   background-color: #e5f1fc;
-  cursor: url(star-4pt-round.png) 12 12, default;
   display: grid;
   display: flex;
   flex-direction: column;

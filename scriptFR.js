@@ -62,3 +62,46 @@ toggleThemeButton.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 }),
     displayTime();
+
+
+const msgJson = [
+    {
+        "msg": "Manakish au fromage!",
+        "url": "https://i.imghippo.com/files/Paz2168LT.JPG",
+    },
+    {
+        "msg": "La Poutine est un plat très apprécié dans tout le pays.",
+        "url": "https://i.imghippo.com/files/kDnM6947UxI.JPG",
+    },
+    {
+        "msg": "Gelato à la pastèque et au thé vert",
+        "url": "https://i.imghippo.com/files/QSX8753so.JPG",
+    },
+    {
+        "msg": "Tacos de poisson!",
+        "url": "https://i.imghippo.com/files/NmU2919VfM.JPG"
+    },
+    {
+        "msg": "Pommes de terre à l'ail avec un côté de ShishTaouk",
+        "url": "https://i.imghippo.com/files/vABq9696jU.JPG",
+    },
+    {
+        "msg": "En commençant par un mets frais de l'océan, les huîtres!",
+        "url": "https://i.imghippo.com/files/afRU6008IAQ.JPG",
+    }
+];
+const stringJSON = JSON.stringify(msgJson);
+const facts = JSON.parse(stringJSON);
+
+let msgIndex = 0;
+
+const buttonNext = document.getElementById("buttonNext");
+const msgOutput = document.getElementById("message");
+const mtlPics = document.getElementById("mtlPics");
+
+buttonNext.addEventListener("click", function () {
+    msgOutput.innerHTML = facts[msgIndex].msg;
+    mtlPics.src = facts[msgIndex].url;
+
+    msgIndex = (msgIndex + 1) % facts.length;
+});

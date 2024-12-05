@@ -63,46 +63,37 @@ toggleThemeButton.addEventListener("click", function () {
 }),
     displayTime();
 
-
-//THE FACT OF THE DAY
 const msgJson = [
     {
-        "msg": "Cheesy Manakish!",
-        "url": "https://i.imghippo.com/files/Paz2168LT.JPG",
+        msg: "Cheesy Manakish!",
+        url: "https://i.imghippo.com/files/Paz2168LT.JPG",
     },
     {
-        "msg": "A beloved favorite all around the country, Poutine!",
-        "url": "https://i.imghippo.com/files/kDnM6947UxI.JPG",
+        msg: "A beloved favorite all around the country, Poutine!",
+        url: "https://i.imghippo.com/files/kDnM6947UxI.JPG",
     },
     {
-        "msg": "Watermelon & Green Tea Gelato",
-        "url": "https://i.imghippo.com/files/QSX8753so.JPG",
+        msg: "Watermelon & Green Tea Gelato",
+        url: "https://i.imghippo.com/files/QSX8753so.JPG",
+    },
+    { msg: "Fish Tacos!", url: "https://i.imghippo.com/files/NmU2919VfM.JPG" },
+    {
+        msg: "Garlic potatos with a side of ShishTaouk",
+        url: "https://i.imghippo.com/files/vABq9696jU.JPG",
     },
     {
-        "msg": "Fish Tacos!",
-        "url": "https://i.imghippo.com/files/NmU2919VfM.JPG"
+        msg: "Starting with a ocrean fresh delicacy, Oysters!",
+        url: "https://i.imghippo.com/files/afRU6008IAQ.JPG",
     },
-    {
-        "msg": "Garlic potatos with a side of ShishTaouk",
-        "url": "https://i.imghippo.com/files/vABq9696jU.JPG",
-    },
-    {
-        "msg": "Starting with a ocrean fresh delicacy, Oysters!",
-        "url": "https://i.imghippo.com/files/afRU6008IAQ.JPG",
-    }
-];
-const stringJSON = JSON.stringify(msgJson);
-const facts = JSON.parse(stringJSON);
-
+],
+    stringJSON = JSON.stringify(msgJson),
+    facts = JSON.parse(stringJSON);
 let msgIndex = 0;
-
-const buttonNext = document.getElementById("buttonNext");
-const msgOutput = document.getElementById("message");
-const mtlPics = document.getElementById("mtlPics");
-
+const buttonNext = document.getElementById("buttonNext"),
+    msgOutput = document.getElementById("message"),
+    mtlPics = document.getElementById("mtlPics");
 buttonNext.addEventListener("click", function () {
-    msgOutput.innerHTML = facts[msgIndex].msg;
-    mtlPics.src = facts[msgIndex].url;
-
-    msgIndex = (msgIndex + 1) % facts.length;
+    (msgOutput.innerHTML = facts[msgIndex].msg),
+        (mtlPics.src = facts[msgIndex].url),
+        (msgIndex = (msgIndex + 1) % facts.length);
 });

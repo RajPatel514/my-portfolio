@@ -6,6 +6,10 @@ a,
 button {
   color: #000;
 }
+
+.dark-mode a {
+  color: #dedede;
+}
 #mtlPics {
   width: 450px;
   height: auto;

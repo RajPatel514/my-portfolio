@@ -12,15 +12,15 @@ saveButton &&
         e.preventDefault();
         let t = fnIput.value,
             n = quesInput.value,
-            a = emailInput.value;
-        t && n && a
-            ? validateEmail(a)
+            i = emailInput.value;
+        t && n && i
+            ? validateEmail(i)
                 ? (alert("Merci pour votre soumission. Nous vous répondrons sous peu!"),
                     (window.location.href = "indexFR.html"))
                 : alert("S'il vous plaît, mettez une courriel valide.")
             : t
                 ? n
-                    ? a || alert("Veuillez entrer votre courriel.")
+                    ? i || alert("Veuillez entrer votre courriel.")
                     : alert("Veuillez saisir vos commentaires ou vos questions.")
                 : alert("Veuillez saisir votre prénom.");
     }),
@@ -52,17 +52,16 @@ var typed = new Typed(".element", {
 });
 const toggleThemeButton = document.getElementById("darkMode");
 function displayTime() {
-    function updateTime() {
+    function e() {
         let e = new Date().toLocaleString();
         document.getElementById("currentTime").innerText = e;
     }
-    updateTime(), setInterval(updateTime, 1e3);
+    e(), setInterval(e, 1e3);
 }
 toggleThemeButton.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 }),
     displayTime();
-
 const msgJson = [
     {
         msg: "Manakish au fromage!",

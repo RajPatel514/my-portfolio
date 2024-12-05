@@ -12,9 +12,9 @@ saveButton &&
         e.preventDefault();
         let t = fnIput.value,
             n = quesInput.value,
-            a = emailInput.value;
-        t && n && a
-            ? validateEmail(a)
+            s = emailInput.value;
+        t && n && s
+            ? validateEmail(s)
                 ? (alert(
                     "Thank you for your submission. We will get back to you shortly!"
                 ),
@@ -22,7 +22,7 @@ saveButton &&
                 : alert("Please enter a valid email address.")
             : t
                 ? n
-                    ? a || alert("Please enter your email address.")
+                    ? s || alert("Please enter your email address.")
                     : alert("Please enter your feedback or questions.")
                 : alert("Please enter your first name.");
     }),
@@ -52,17 +52,16 @@ var typed = new Typed(".element", {
 });
 const toggleThemeButton = document.getElementById("darkMode");
 function displayTime() {
-    function updateTime() {
+    function e() {
         let e = new Date().toUTCString();
         document.getElementById("currentTime").innerText = e;
     }
-    updateTime(), setInterval(updateTime, 1e3);
+    e(), setInterval(e, 1e3);
 }
 toggleThemeButton.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 }),
     displayTime();
-
 const msgJson = [
     {
         msg: "Cheesy Manakish!",
